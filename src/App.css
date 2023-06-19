@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    padding-left: 5rem;
+    padding-top: 0.3rem;
+    width: 100%;
+    /* position: fixed; */
+    height: 3rem;
+    position: fixed;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.navbar h2 {
+    color: white;
+    font-size: 1.5rem;
+    color: goldenrod;
+}
+
+
+.navul {
+    display: flex;
+    padding-right: 9rem;
+}
+
+
+.navli {
+    list-style: none;
+    padding: 0.4rem;
+    padding-right: 1.4rem;
+    /* position: relative; */
+
+
+}
+
+
+
+.navli a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: white;
+    font-family: 'roboto', sans-serif;
+
+}
+
+.logo {
+    color: goldenrod;
+    display: flex;
+    margin-left: 2rem;
+    padding-top: 0.3rem;
+}
+
+.btn {
+    color: inherit;
+    border: none;
+    display: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    height: 2rem;
+    padding-top: 0.1rem;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    /* .na {
+        display: block;
+
+    } */
+
+    .navul {
+        display: none;
+    }
+
+    .btn {
+        cursor: pointer;
+        display: block;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .navul {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    /* .na {
+        display: block;
+
+    } */
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    .navul {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo {
+        padding-left: 10px;
+        margin-left: -60px;
+    }
+
+}
+
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .navull {
+        float: right;
+        /* margin-right: -200px; */
+
+    }
+
+    .navicon {
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    .navicon {
+        display: none;
+    }
+}
+
+.navicon {
+    border: 2px solid gray;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    transition: 2ms;
+    margin-top: 3rem;
+    text-align: center;
+    position: fixed;
+    padding-top: 1rem;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    transition: all 2ms ease-in-out;
+    width: 30vw;
+    box-sizing: border-box;
+    background-color: rgb(75, 74, 74);
+}
+
+
+
+.navlii {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.navlii a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-family: sans-serif;
+    /* font-weight: 600; */
+    color: white;
+
+}
+
+.closeBtn {
+    width: 2rem;
+    background-color: rgb(75, 74, 74);
+    color: white;
+    /* display: flex; */
+    border: none;
+    /* margin-left: 6rem; */
+    border-radius: 8px;
+    padding-bottom: 1rem;
+}
